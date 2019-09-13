@@ -1,0 +1,8 @@
+<h1>Posts</h1>
+<app-post-list-item *ngFor ="let post of POSTS, let i=index"
+                            [title]="post.title"
+                            [content]="post.content"
+                            [created_at]="post.created_at"
+                            [loveIts]="post.loveIts"
+                            [index]="i">
+</app-post-list-item> 

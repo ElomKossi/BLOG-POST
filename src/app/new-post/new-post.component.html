@@ -1,0 +1,20 @@
+<div class="row">
+  <div class="col-sm-8 col-sm-offset-2">
+    <h1>Nouveau post</h1>
+    <form (ngSubmit)="onSubmit(f)" #f="ngForm">
+      <div class="form-group">
+        <label for="title">
+          Titre
+        </label>
+        <input type="text" id="title" class="form-control" name="title" ngModel>
+      </div>
+      <div class="form-group">
+        <label for="content">
+          Contenu
+        </label>
+        <input type="text" id="content" class="form-control"  name="content" ngModel>
+      </div>
+      <button class="btn btn-primary" type="submit">Soumettre</button>
+    </form>
+  </div>
+</div>
